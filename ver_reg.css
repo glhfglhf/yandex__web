@@ -86,6 +86,8 @@ body {
     background-color: rgb(84, 77, 138);
     font: 57 14pt "Etna";
     border: 3px solid #A52A2A;
+    color: #BA55D3;
+    opacity: .90;
 }
 
 .login {
@@ -95,6 +97,8 @@ body {
     background-color: rgb(84, 77, 138);
     font: 57 14pt "Etna";
     border: 3px solid #A52A2A;
+    color: #DEB887;
+    opacity: .90;
 }
 
 h1 {
@@ -162,4 +166,3 @@ width: 190px;
 height: 35px;
 opacity: .50;
 }
-/*----------------------- name, password ------------------------------ */

@@ -1,3 +1,4 @@
+/*----------------------- fon ------------------------------ */
 :root {
   --gradient: linear-gradient(90deg, #ee6352, purple, #ee6352);
 
@@ -52,19 +53,113 @@ body {
 .title:hover {
   background-position: right;
 }
+/*----------------------- form ------------------------------ */
 
-
-.fun {
-  color: white;
-  border: 0;
-  cursor: pointer;
-  padding: .5em 1.25em;
-  background: linear-gradient(90deg, #ee6352, purple, #ee6352);
-  background-size: 300%;
-  background-position: left;
-  transition: background-position 350ms;
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .7);
 }
 
-.fun:hover {
-  background-position: right;
+.form h1 {
+    margin: 30px, 100px;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+
 }
+
+.input-form {
+    margin: 20px 40px;
+    text-align: center;
+    width: 700px;
+    height: 70px;
+}
+
+.password {
+    width: 250px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: rgb(84, 77, 138);
+    font: 57 14pt "Etna";
+    border: 3px solid #A52A2A;
+}
+
+.login {
+    width: 250px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: rgb(84, 77, 138);
+    font: 57 14pt "Etna";
+    border: 3px solid #A52A2A;
+}
+
+h1 {
+    background-color: #808000;
+    opacity: .75;
+    font-style: "italic"
+}
+/*----------------------- button ver, reg ------------------------------ */
+.reg {
+border: 2px solid #A4004D;
+font: 57 14pt "MS Serif";
+background-color: #40404D;
+color: white;
+border-radius: 10px;
+width: 200px;
+height: 40px;
+}
+
+.reg:hover{
+border: 2px solid #A4004D;
+font: 57 14pt "MS Serif";
+background-color: #FFDEAD;
+color: white;
+border-radius: 10px;
+opacity: .50;
+}
+
+.reg:pressed{
+border: 2px solid #A4004D;
+font: 57 14pt "MS Serif";
+background-color: #FFDEAD;
+color: white;
+border-radius: 10px;
+width: 190px;
+height: 35px;
+opacity: .50;
+}
+
+.ver {
+border: 2px solid #A4004D;
+font: 57 14pt "MS Serif";
+background-color: #40404D;
+color: white;
+border-radius: 10px;
+width: 200px;
+height: 40px;
+}
+
+.ver:hover{
+border: 2px solid solid blue;
+font: 57 14pt "MS Serif";
+background-color: #FFDEAD;
+color: white;
+border-radius: 10px;
+opacity: .50;
+}
+
+.ver:pressed{
+border: 2px solid #A4004D;
+font: 57 14pt "MS Serif";
+background-color: #FFDEAD;
+color: white;
+border-radius: 10px;
+width: 190px;
+height: 35px;
+opacity: .50;
+}
+/*----------------------- name, password ------------------------------ */

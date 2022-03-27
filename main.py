@@ -9,7 +9,7 @@ def sign_in():
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel= "stylesheet" type= "text/css" href="static/styles/background.css">
+    <link rel= "stylesheet" type= "text/css" href="static/styles/ver_reg.css">
     <title>Title</title>
 </head>
 <body>
@@ -37,7 +37,7 @@ def sign_up():
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel= "stylesheet" type= "text/css" href="static/styles/background.css">
+    <link rel= "stylesheet" type= "text/css" href="static/styles/ver_reg.css">
     <title>Title</title>
 </head>
 <body>
@@ -59,4 +59,4 @@ def sign_up():
 
 
 if __name__ == '__main__':
-    app.run(port=9000, host='127.0.0.1')
+    app.run(port=8080, host='127.0.0.1')

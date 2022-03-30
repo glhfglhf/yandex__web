@@ -1,0 +1,67 @@
+.rocket {
+    top: 40%;
+    left: 40%;
+    width: 500px;
+    height: 400px;
+}
+#axis:active .move-up {
+    transform: translate(0,-550px);
+    -webkit-transform: translate(0,-550px);
+    -o-transform: translate(0,-550px);
+    -moz-transform: translate(0,-550px);
+}
+.object {
+    position: relative;
+    top: 550px;
+    transition: all 13s ease-in-out;
+    -webkit-transition: all 13s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 13s ease-in-out; /** Firefox **/
+    -o-transition: all 13s ease-in-out; /** Opera **/
+}
+}
+.van {
+    top: 44%;
+    left: 44%;
+}
+/**
+.photo-container-5 {
+	max-width: 380px;
+	width: 100%;
+	margin: 20px auto;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+}
+.photo-container-5 img {
+	width: 100%;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+}
+.photo-container-5 .axis {
+	position: relative;
+	animation: brightness 10s linear 5s infinite;
+}
+.photo-container-5 .boom {
+	position: absolute;
+	top: 0;
+	animation: brightness 10s linear infinite;
+}
+@keyframes brightness {
+	0% {
+		opacity: 1;
+	}
+	54% {
+		filter: none;
+	}
+	58% {
+		opacity: 1;
+	}
+	59.99999% {
+		filter: brightness(10);
+		z-index: 1;
+	}
+	60% {
+		opacity: 0;
+		z-index: -1;
+	}
+}
+**/

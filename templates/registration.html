@@ -2,21 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="static/style/ver_reg.css">
-    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="static/styles/ver_reg.css">
+    <title>Registration</title>
 </head>
 <body>
     <div class="form">
-            <h1 class="tit">Регистрация</h1>
+            <div class="tit">Регистрация</div>
+        <form method="post" action="/home">
             <div class="input-form">
-                <input class="login" type="text" placeholder="Придумайте логин">
+                <input class="login" type="text" placeholder="Придумайте логин" name="login">
             </div>
             <div class="input-form">
-                <input class="password" type="password" placeholder="Пароль">
+                <input class="password" type="password" placeholder="Пароль" name="password">
             </div>
             <div class="input-form">
-                <button class="ver">Войти</button>
-                <button class="reg">Зарегистрироваться</button>
+                <button name="submit" value="reg" class="ver">Войти</button>
+            </div>
+        </form>
+            <div class="input-form">
+                <a href="\up">Войти</a>
             </div>
         </div>
 </body>

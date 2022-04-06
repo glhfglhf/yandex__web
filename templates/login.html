@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="static/styles/ver_reg.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="form">
+            <div class="tit">Вход</div>
+        <form method="POST" action="/home">
+            <div class="input-form">
+                <input class="login" type="text" placeholder="Логин" name="login">
+            </div>
+            <div class="input-form">
+                <input class="password" type="password" placeholder="Пароль" name="password">
+            </div>
+            <div class="input-form">
+                <input name="submit" value="Войти" class="ver" type="submit">
+            </div>
+        </form>
+            <div class="input-form">
+                <a href="\registration">Зарегистрироваться</a>
+            </div>
+        {% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+        </div>
+
+</body>
+</html>

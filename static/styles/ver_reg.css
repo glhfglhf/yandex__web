@@ -177,3 +177,7 @@ width: 190px;
 height: 35px;
 opacity: .50;
 }
+/** flashes **/
+.flashes {
+    color: red;
+}

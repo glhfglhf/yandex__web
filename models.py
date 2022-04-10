@@ -8,6 +8,7 @@ class User (db.Model, UserMixin):
     login = db.Column(db.String(128), nullable=False, unique=True)
     password = db.Column(db.String(255), nullable=False)
     avatar = db.Column(db.BLOB, nullable=True)
+    cash = db.Column(db.Integer, nullable=False)
 
 
 @manager.user_loader

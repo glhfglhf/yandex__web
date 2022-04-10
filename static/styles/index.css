@@ -1,0 +1,40 @@
+html {
+    height: 100%;
+    overflow: hidden;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
+    background-size: 100%;
+}
+
+.text {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 23pt;
+    opacity: .7;
+    color: #5F9EA0;
+}
+.name {
+    margin-top: 170px ;
+    text-align: center;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 40pt;
+    opacity: .7;
+    color: #AFEEEE;
+}
+
+#header{
+  top: 0px;
+  width: 3200px;
+  height: 100px;
+  background-color: #4169E1;
+  margin-bottom: 10px;
+}
+h1 {
+ text-align: center;
+ color: #B8860B;
+ font-size: 50pt;
+}

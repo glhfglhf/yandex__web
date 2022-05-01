@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="static/styles/add_picture.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="back">
+<a href="home"><img width="50" height="50" src="static/dev_image/back.png" alt="Correct profile"/></a>
+</div>
+<form method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <input type="file" class="add_file" id="photo" name="file">
+        <img src="static/user_images/{{avatar}}" width="300" height="300">
+        <div>Login: {{login}} </div>
+    </div>
+    <button type="submit" class="btn">Отправить</button>
+    {% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+</form>
+</body>
+</html>

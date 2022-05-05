@@ -1,0 +1,101 @@
+/*----------------------- fon ------------------------------ */
+:root {
+  --gradient: linear-gradient(90deg, #ee6352, purple, #ee6352);
+
+}
+
+body {
+  font-family: basic-sans, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: #333;
+  background: #ddd;
+  background-size: 300%;
+  background-image: var(--gradient);
+  animation: bg-animation 25s infinite;
+}
+
+@keyframes bg-animation {
+  0% {background-position: left}
+  50% {background-position: right}
+  100% {background-position: left}
+}
+
+.content {
+  background: white;
+  width: 70vw;
+  padding: 3em;
+  box-shadow: 0 0 3em rgba(0,0,0,.15);
+}
+
+.title {
+  margin: 0 0 .5em;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 3rem;
+  color: #ee6352;
+  line-height: .8;
+  margin: 0;
+
+  background-image: var(--gradient);
+  background-clip: text;
+  color: transparent;
+  // display: inline-block;
+  background-size: 300%;
+  transition: background-position 1s;
+}
+
+.title:hover {
+  background-position: right;
+}
+
+.add_file {
+    color: yellow;
+    font: 57 14pt "MS Serif";
+    font-style: normal;
+    font-family: sans-serif;
+}
+
+.btn {
+border: 2px solid #A4004D;
+font: 57 14pt "MS Serif";
+background-color: #40404D;
+color: white;
+border-radius: 10px;
+width: 200px;
+height: 40px;
+}
+
+.btn:hover{
+border: 2px solid #A4004D;
+font: 57 14pt "MS Serif";
+background-color: #FFDEAD;
+color: white;
+border-radius: 10px;
+opacity: .50;
+}
+
+.btn:active{
+border: 2px solid blue;
+font: 57 14pt "MS Serif";
+background-color: #FFDEAD;
+color: white;
+border-radius: 10px;
+width: 190px;
+height: 35px;
+opacity: .50;
+}
+
+.flashes {
+    color: blue;
+}
+.back {
+    top: 0%;
+    left: 50%;
+    position: absolute;
+}

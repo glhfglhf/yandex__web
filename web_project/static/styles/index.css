@@ -39,3 +39,16 @@ h1 {
  color: #B8860B;
  font-size: 50pt;
 }
+
+.temp {
+    margin: 0;
+    position: absolute;
+    top: 3%;
+    left: 8%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    opacity: .7;
+    color: green;
+}

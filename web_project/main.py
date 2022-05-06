@@ -160,7 +160,14 @@ def add_picture():
 
 @app.route('/', methods=['POST', 'GET'])
 def start():
-    return render_template('index.html')
+    import requests
+    app_id = "8f9cbe6979e700a257b9eebf64dbbe72"
+    url_base = "http://api.openweathermap.org/data/2.5/"
+
+    def weather(q: str = "Nalchik", appid: str = app_id):
+        return round(requests.get(url_base + "weather", params=locals()).json()['main']['temp'] - 273.15)
+    temp = weather()
+    return render_template('index.html', temp=str(temp))
 
 
 @app.route('/logout', methods=['POST', 'GET'])

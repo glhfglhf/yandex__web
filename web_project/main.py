@@ -209,6 +209,7 @@ def take_money():
             cursor.execute(f'UPDATE cash SET cash = {int(cash + 100)} WHERE login = "{user_name}"')
             db_coins.commit()
             db_col.commit()
+            flash('Успешно забрано!')
             return render_template('collect_cash.html', cash=int(cash + 100), lt_col=date.today())
         else:
             flash('Вы уже забирали сегодня')
